@@ -1,5 +1,7 @@
-source 'http://api.berkshelf.com'
+source 'https://supermarket.chef.io'
 
 metadata
 
-cookbook 'yum_test', path: 'test/fixtures/cookbooks/yum_test'
+group :integration do
+  cookbook 'yum_test', path: 'test/fixtures/cookbooks/yum_test'
+end
